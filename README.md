@@ -46,3 +46,7 @@ Make sure you have Node.js installed on your machine.
     co.scan("atv");
     console.log(co.total());
    ```
+
+```
+NOTE: This project has constant.ts file which contains the products as a constant in memory.
+```

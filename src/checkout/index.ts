@@ -2,15 +2,12 @@ import { DiscountSale } from "../discountSale";
 import { IPricingRules, Cart } from "../interface";
 
 export class Checkout {
-  private pricingRules: IPricingRules;
   private cart: Cart;
   private discountSaleService: DiscountSale;
 
   constructor(pricingRules: IPricingRules) {
     // Create an instance of DiscountSale to handle discount-related operations
     this.discountSaleService = new DiscountSale(pricingRules);
-
-    this.pricingRules = pricingRules;
     this.cart = {};
   }
 
